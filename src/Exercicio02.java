@@ -37,7 +37,7 @@ public class Exercicio02 {
                 case 3:
                     if (pilhaLivros.isEmpty()) {
                         System.out.println("A pilha está vazia!");
-                        break;
+
                     } else {
                         pilhaLivros.pop();
                         System.out.println("Pilha:");
@@ -45,8 +45,9 @@ public class Exercicio02 {
                             System.out.println(livro);
                         }
                         System.out.println("Um livro foi removido da pilha");
-                        break;
+
                     }
+                    break;
 
                 case 0:
                     System.out.println("Programa finalizado!");

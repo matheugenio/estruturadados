@@ -22,6 +22,10 @@ public class Exercicio01 {
                     System.out.print("Digite o nome do cliente: ");
                     String nome = sc.nextLine();
                     filaClientes.add(nome);
+                    System.out.println("Fila:");
+                    for (String fila : filaClientes) {
+                        System.out.println(fila);
+                    }
                     System.out.println("Cliente " + nome + " adicionado na fila.");
                     break;
 
@@ -35,7 +39,12 @@ public class Exercicio01 {
                 case 3:
                     String clienteRemovido = filaClientes.poll();
                     if (clienteRemovido != null) {
+                        System.out.println("Fila:");
+                        for (String fila : filaClientes) {
+                            System.out.println(fila);
+                        }
                         System.out.println("Cliente " + clienteRemovido + " foi retirado da fila.");
+
                     } else {
                         System.out.println("A fila está vazia.");
                     }
